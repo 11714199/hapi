@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine.js Example</title>
+</head>
+
+<body>
+    <div x-data="{count: 0}">
+        <button @click="count++">Count</button>
+        <p>Count: <span x-text="count"></span></p>
+    </div>
+    <div x-data="{open: false}">
+        <button @click="open= !open">Toggle</button>
+        <div x-show="open">Drop Down</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</body>
+
+</html>
